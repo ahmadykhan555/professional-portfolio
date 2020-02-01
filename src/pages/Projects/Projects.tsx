@@ -3,7 +3,7 @@ import './Projects.scss';
 
 const Projects = () => {
     return(
-        <div className="page projects-page">Projects</div>
+        <div className="page projects-page def-padding">Projects</div>
     );
 }
 

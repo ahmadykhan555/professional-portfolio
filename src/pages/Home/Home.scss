@@ -1,3 +1,7 @@
 .home-page {
     background: #0F2027;
+    background-image: url('../../home.jpg');
+    height: calc(100vh - 145px) !important;
+    background-size: cover;
+    background-position: center;
 }
