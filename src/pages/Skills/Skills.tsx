@@ -3,7 +3,7 @@ import './Skills.scss';
 
 const Skills: React.FC<any> = () => {
     return (
-        <div className="skills-page">Skills</div>
+        <div className="page skills-page">Skills</div>
     );
 }
 
