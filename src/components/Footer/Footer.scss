@@ -1,0 +1,21 @@
+.footer {
+    padding: 2rem 5rem;
+    color: black;
+    position: relative;
+
+    .social {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        > a {
+            font-size: 25px;
+            svg {
+                color: black;
+            }
+        }
+    }
+}

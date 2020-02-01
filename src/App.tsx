@@ -5,6 +5,7 @@ import Contact from './pages/Contact/Contact';
 import Skills from './pages/Skills/Skills';
 import Projects from './pages/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 const App: React.FC<any> = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC<any> = () => {
       <Projects></Projects>
       <Skills></Skills>
       <Contact></Contact>
+      <Footer/>
     </div>
   );
 }
