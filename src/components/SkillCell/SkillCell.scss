@@ -1,0 +1,34 @@
+.skill-cell {
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    background: gray;
+    color: aqua;
+    position: relative;
+
+    margin: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    .skill-name {
+        position: absolute;
+        margin: auto;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background: #202020;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+
+        > h5 {
+            margin: auto;
+            font-weight: 900;
+        }
+    }
+}
