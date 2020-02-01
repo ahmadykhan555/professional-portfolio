@@ -1,0 +1,15 @@
+.project-tile {
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .project-title {
+        margin-bottom: 0.75rem;
+    }
+
+    .short-desc {
+        font-weight: 500;
+    }
+}

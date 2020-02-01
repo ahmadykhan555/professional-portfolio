@@ -14,10 +14,10 @@ const App: React.FC<any> = () => {
           <h5 className="dev-expertise">Full stack developer</h5>
         </div>
         <div className="links">
-          <a href="#" className="nav-link">Home</a>
-          <a href="#" className="nav-link">Projects</a>
-          <a href="#" className="nav-link">Skills</a>
-          <a href="#" className="nav-link">Contact</a>
+          <a href="/home" className="nav-link">Home</a>
+          <a href="/projects" className="nav-link">Projects</a>
+          <a href="/skills" className="nav-link">Skills</a>
+          <a href="/lets-talk" className="nav-link">Contact</a>
         </div>
       </div>
       <Home></Home>

@@ -1,3 +1,13 @@
 .projects-page {
-    background: #203A43;
+    background-image: linear-gradient(#060606, #202020);
+    padding: 3rem 8rem;
+
+    .projects-list-wrapper {
+        width: 100%;
+        height: 85%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+    }
+
 }

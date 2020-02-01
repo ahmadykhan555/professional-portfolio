@@ -39,4 +39,22 @@
             }
         }
     }
+
+    .page-title {
+        font-weight: 900;
+        margin-bottom: 2rem;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 75%;
+            left: 50%;
+            bottom: -0.75rem;
+            height: 2px;
+            background: lightgray;
+            transform: translateX(-50%)
+        }
+    }
 }
