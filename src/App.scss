@@ -1,11 +1,24 @@
+@import './styles/variables.scss';
+@import './styles/mixins.scss';
+
 .App {
     font-size: 16px;
     color: #ffff;
+    width: 100%;
+    background: black;
+    $padding: 2rem;
 
     .page {
         height: 100vh;
         overflow: hidden;
         text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: $padding;
+    }
+
+    .navbar {
+        padding: $padding;
     }
 
     .page-title {
@@ -24,6 +37,28 @@
             height: 2px;
             background: lightgray;
             transform: translateX(-50%)
+        }
+    }
+}
+
+@include mQ($widthMobileLg) {
+    .App {
+        $padding: 1.5rem;
+
+        .navbar {
+            padding: $padding;
+        }
+
+        .page {
+            padding: $padding;
+        }
+    }
+}
+
+@include mQ($widthTablet) {
+    .page {
+        &.fit-content {
+            height: fit-content !important;
         }
     }
 }

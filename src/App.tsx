@@ -7,6 +7,7 @@ import Projects from './pages/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
+
 const App: React.FC<any> = () => {
   return (
     <div className="App">

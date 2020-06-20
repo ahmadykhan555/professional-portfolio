@@ -1,9 +1,14 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .project-tile {
     display: inline-block;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
 
     .project-title {
         margin-bottom: 0.75rem;
@@ -11,5 +16,15 @@
 
     .short-desc {
         font-weight: 500;
+    }
+
+
+    @include mQ($widthTablet) {
+        height: 450px;
+    }
+
+    @include mQ($widthMobileLg) {
+        height: 350px;
+        width: 100%;
     }
 }

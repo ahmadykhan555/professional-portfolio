@@ -1,9 +1,15 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .navbar {
-    padding: 1.5rem 3.5rem;
+    width: 100%;
+    box-sizing: border-box;
+
     .intro {
         padding-bottom: 1.2rem;
         margin-bottom: 1rem;
         position: relative;
+
         &::after {
             content: '';
             position: absolute;
@@ -17,15 +23,28 @@
         .dev-name {
             text-transform: uppercase;
             margin-bottom: 0.25rem;
+            font-size: 1.5rem;
         }
     }
+
     .nav-link {
-        padding: 0 16px; 
+        padding: 0 16px;
         text-decoration: none;
         color: lightgray;
-        font-size: 0.83em;
+        font-size: 1em;
+
         &:first-child {
             padding-left: 0;
+        }
+    }
+
+    @include mQ($widthMobileLg) {
+        .dev-name {
+            font-size: 1.8rem;
+        }
+
+        .dev-expertise {
+            font-size: 0.875rem;
         }
     }
 }

@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  ::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+  }
 }
 
 code {
@@ -14,8 +19,4 @@ code {
 
 * {
   margin: 0;
-}
-
-.def-padding {
-  padding: 1rem;
 }

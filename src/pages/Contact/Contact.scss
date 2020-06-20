@@ -1,2 +1,29 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .contact-page {
+    background: black;
+
+    .content {
+        width: 100%;
+        height: calc(100% - 100px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .image-container {
+            background: lightgray;
+        }
+
+        .contact-form {
+            background: gray;
+        }
+    }
+}
+
+@include mQ($widthMobileLg) {
+    .contact-page {
+        .content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }

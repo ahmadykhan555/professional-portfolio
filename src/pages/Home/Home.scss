@@ -1,8 +1,17 @@
 .home-page {
-    background: #0F2027;
-    background-image:  linear-gradient(to right, #000000f7 10px, transparent), url('../../home.jpg');
-    height: calc(100vh - 145px) !important;
-    background-size: cover;
-    background-position: center -50px;
-    position: relative;
+  background: #0f2027;
+  background-image: linear-gradient(to right, #000000f7 10px, transparent),
+    url("../../home.jpg");
+  height: calc(100vh - 145px) !important;
+  background-size: cover;
+  background-position: center -50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .animation-text {
+    overflow: hidden;
+    margin: auto;
+    font-size: 1.5rem;
+  }
 }

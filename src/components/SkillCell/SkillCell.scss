@@ -1,3 +1,6 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .skill-cell {
     height: 150px;
     width: 150px;
@@ -7,13 +10,12 @@
     background: gray;
     color: aqua;
     position: relative;
-
     margin: 10px;
 
     &:last-child {
         margin-right: 0;
     }
-    
+
     .skill-name {
         position: absolute;
         margin: auto;
@@ -26,9 +28,20 @@
         transform: translate(-50%, -50%);
         display: flex;
 
-        > h5 {
+        >h5 {
             margin: auto;
             font-weight: 900;
+        }
+    }
+}
+
+@include mQ($widthMobileLg) {
+    .skill-cell {
+        height: 100px;
+        width: 100px;
+
+        .skill-name>h5 {
+            font-size: 0.7rem;
         }
     }
 }

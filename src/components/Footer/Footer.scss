@@ -1,21 +1,33 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
 .footer {
-    padding: 2rem 5rem;
-    color: black;
-    position: relative;
+  display: flex;
+  padding: 1rem 5rem;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  align-items: center;
+  border-top: 0.3px solid lightgray;
 
-    .social {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        transform: translate(-50%, -50%);
-        text-align: center;
+  a {
+    margin-right: 8px;
 
-        > a {
-            font-size: 25px;
-            svg {
-                color: black;
-            }
-        }
+    &:last-child {
+      margin-right: 0;
     }
+  }
+
+  svg {
+    color: white;
+    width: 1.6em;
+    height: 1.6em;
+  }
+}
+
+@include mQ($widthMobileLg) {
+  .footer {
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+  }
 }
