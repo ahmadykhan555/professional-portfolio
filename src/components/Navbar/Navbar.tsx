@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
+import { UserInfo } from "../../meta/meta";
 
-const Navbar: React.FC<any> = () => {
+interface NavBarProps {
+  info: UserInfo;
+}
+
+const Navbar: React.FC<NavBarProps> = ({ info }) => {
   return (
     <div className="navbar ''" style={{ background: "black" }}>
       <div className="intro">
-        <h3 className="dev-name">Ahmad Yar Khan</h3>
-        <h5 className="dev-expertise">Full stack developer</h5>
+        <h3 className="dev-name">{info.name}</h3>
+        <h5 className="dev-expertise">{info.expertise}</h5>
       </div>
       <div className="links">
         <a href="#home" className="nav-link">

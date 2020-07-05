@@ -3,19 +3,11 @@ import "./Skills.scss";
 import { Skill, SkillCell } from "../../components/SkillCell/SkillCell";
 import bg from "../../skills.jpg";
 
-const Skills: React.FC<any> = () => {
-  const skills: Skill[] = [
-    { name: "Angular" },
-    { name: "React" },
-    { name: "Ionic" },
-    { name: "VueJs" },
-    { name: "NodeJs(req, res)" },
-    { name: "Typescript();" },
-    { name: "Javascript()" },
-    { name: "@Sass" },
-    { name: "<HTML5/>" },
-    { name: "#CSS3" }
-  ];
+interface SkillsPageProps {
+  skills: string[];
+}
+
+const Skills: React.FC<SkillsPageProps> = ({ skills }) => {
   return (
     <div
       className="page skills-page fit-content"
@@ -32,7 +24,7 @@ const Skills: React.FC<any> = () => {
         style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
       >
         {skills.map((skill, index) => (
-          <SkillCell key={index} name={skill.name} />
+          <SkillCell key={index} name={skill} />
         ))}
       </div>
     </div>

@@ -1,7 +1,5 @@
 import React from "react";
 import "./Contact.scss";
-import { Image } from "../../components/Image/Image";
-import dp from "./../../idea.jpg";
 
 const Contact: React.FC<any> = () => {
   return (
