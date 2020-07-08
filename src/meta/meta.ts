@@ -10,7 +10,7 @@ export interface UserInfo {
   name: string;
   socials: Social[];
   tagline: string;
-  about: string;
+  contact: ContactInfo;
 }
 
 export interface Social {
@@ -33,8 +33,16 @@ export const dummyUser: User = {
     email: "",
     socials: [],
     tagline: "",
-    about: ""
+    contact: {
+      message: "",
+      email_address: ""
+    }
   },
   projects: [],
   skills: []
 };
+
+export interface ContactInfo {
+  message: string;
+  email_address: string;
+}

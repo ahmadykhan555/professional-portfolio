@@ -23,7 +23,10 @@ const App: React.FC<any> = () => {
       <Home tagline={user.info.tagline}></Home>
       <Projects projects={user.projects}></Projects>
       <Skills skills={user.skills}></Skills>
-      <Contact></Contact>
+      <Contact
+        message={user.info.contact.message}
+        email_address={user.info.contact.email_address}
+      ></Contact>
       <Footer />
     </div>
   );
