@@ -27,6 +27,7 @@
         position: relative;
         display: inline-block;
         text-align: center;
+        text-transform: uppercase;
 
         &::after {
             content: '';

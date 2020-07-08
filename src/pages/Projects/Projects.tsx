@@ -1,7 +1,6 @@
 import React from "react";
 import "./Projects.scss";
 import { ProjectTile } from "../../components/ProjectTile/ProjectTile";
-import fallback from "../../tech-2.jpg";
 import { Project as PR } from "../../meta/meta";
 
 interface ProjectSectionProps {
@@ -18,7 +17,7 @@ const Projects: React.FC<ProjectSectionProps> = ({ projects }) => {
             key={index}
             title={project.title}
             description={project.description}
-            thumbnail={project.img_url || fallback}
+            thumbnail={project.img_url}
           />
         ))}
       </div>
